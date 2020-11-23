@@ -5,38 +5,57 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta property=”og:title” content="Mohammed Rayyan Shaji - Software Engineer"/>
+<!--    <meta name="image" property="og:image" content="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=626&w=1199">-->
+    <meta prefix="og: http://ogp.me/ns#" property="og:image" content="https://www.rayyanshaji.com/assets/metaimage.jpg"/>
+    <meta property="og:image:width" content="1199" />
+    <meta property="og:image:height" content="626" />
     <title>Rayyan Shaji</title>
 
     <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style2.css">
-    
-    <link rel="stylesheet/less" type="text/css" href="styles.less" />
-    
+
+
+    <link rel="stylesheet" type="text/css" href="custom.css">
+
     <link rel="stylesheet" href="./assets/font-awesome/css/all.css">
     <link rel="stylesheet" href="./assets/font-awesome/css/brands.css">
     <link rel="stylesheet" href="./assets/font-awesome/css/solid.css">
+    <link rel="stylesheet" href="./assets/font-awesome/css/font-awesome.css">
 
 
+    <script src="https://use.fontawesome.com/a85a860f9f.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.10/clipboard.min.js"></script>
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
     <div class="wrapper">
         <!-- Sidebar  -->
-        <div class="nav-container">
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Mohammed Rayyan Shaji</h3>
+        
+        <div id="sidebar">
+            <div class="pt-3 pl-3">
+                <h3 class="text-justify">MOHAMMED RAYYAN SHAJI</h3>
             </div>
 
-            <ul class="list-unstyled components"  class="navbar-collapse collapse" id="topmenu">
-                <p>GRADUATE STUDENT M.S. (IT)</p>
+            <ul class="list-unstyled components"  id="topmenu">
+            
+                <li class="sidebar-header">
+                <h5 class="text-center font-weight-bold">Full Stack Software Engineer</h5>
+                 </li>
+              
+                
+                
                 <li >
                     <a href="#home" >Home</a>
                 </li>
@@ -81,36 +100,142 @@
             <ul class="list-unstyled CTAs">
                 <li>
                     <center>
-                    <span><i class="fab fa-linkedin" onclick="window.open('https://www.linkedin.com/in/rayyan-shaji/')"></i></span> <span><i class="fab fa-github" onclick="window.open('https://github.com/rayyanshaji')" ></i></span>
-                        <span><i onClick="javascript:window.open('mailto:rayyanz95@gmail.com', 'Mail');event.preventDefault()" class="fas fa-envelope"></i></span>
+                    <span><img src="assets/brands/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/rayyan-shaji/')" class="brand-images"></span> 
+                    <span><img class="brand-images" src= "assets/brands/github.svg" onclick="window.open('https://github.com/rayyanshaji')" ></span>
+                        <span><img src="assets/brands/envelope.svg" onClick="javascript:window.open('mailto:rayyanz95@gmail.com', 'Mail');event.preventDefault()" class="brand-images"></span>
                     </center>
                 </li>
                 <li>
-                    <a href="./assets/resume/MohammedRayyanShajiSoftwareEngineer-converted.pdf" class="download">Download/View resume</a>
+                    <a href="./assets/resume/MohammedRayyanShaji.pdf" class="download">Download/View resume</a>
                 </li>
                 <li><center>
-                <b>rayyanz95@gmail.com</b>&nbsp;&nbsp;&nbsp;&nbsp;
+                <b>rayyanz95@gmail.com</b><span id="copy" class="brand-images" data-clipboard-text="rayyanz95@gmail.com">
+                <i class="fas fa-copy"></i>
+                </span> 
+                <span></span>
                     <b>+1 7734410455</b></center></li>
             </ul>
-            <div class="flex-center">
-        
-            </div>
+            
 
-        </nav>
         </div>
+        
 
         <!-- Page Content  -->
         <div id="content" >
-
-            <h2>Welcome!</h2>
-            <strong>Brief background:</strong>
-            <p style="font-size:15px;">I've been involved with studying and applying knowledge of software engineering, computer science, and web application development since about 6 years. I enjoy working on projects which help me improve on skills that matter. I'm currently enrolled in a masters degree program with a major in Information Technology</p>
             
-
-            <div class="line"></div>
-            <div id="home">
+<!--
+                <div class="topnav">
                 
-            <h5>Purpose and contents:</h5> 
+                <a href="javascript:void(0);" class="icon" id="opennav">
+                        
+                 <i class="fas fa-bars"></i>
+                </a>     
+                 
+                <div id="myLinks" class="myLinks">
+    
+                <ul class="list-unstyled components">
+                    
+                <li >
+                <a href="#home" >Mohammed Rayyan Shaji</a>
+                </li>
+               
+                <li >
+                    <a href="#home" >Home</a>
+                </li>
+                
+                <li>
+                    <a href="#projects2" data-toggle="collapse" aria-expanded="true" class="dropdown-toggle">Projects</a>
+                    
+                </li>    
+                    <ul class="collapse list-unstyled" id="projects2">
+                        <li>
+                            <a href="#nutrional-value">Nutrional Value Calculator</a>
+                        </li>
+                        <li>
+                            <a href="#blueditt">BlueDitt</a>
+                        </li>
+                        <li>
+                            <a href="#issue-tracker">Issue Tracker</a>
+                        </li>
+                        <li>
+                            <a href="#transit-tracker">Transit Tracker</a>
+                        </li>
+                        <li>
+                            <a href="#todo">Task Management Application</a>
+                        </li>
+                    </ul>
+                
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>              
+                
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+                </ul>
+                </div> 
+               
+            </div>
+-->
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #55ACEE;" id="customnav">
+  <a class="navbar-brand " href="#home" style="font-size: 0.9em;">Mohammed Rayyan Shaji</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>   
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div class="dropdown-menu navbar-expand-lg navbar-dark " aria-labelledby="navbarDropdownMenuLink" id="customdropdownmenu">
+          <a class="dropdown-item" href="#nutrional-value">Nutrional Value Calculator</a>
+          <a class="dropdown-item" href="#blueditt">BlueDitt</a>
+          <a class="dropdown-item" href="#issue-tracker">Issue Tracker</a>
+          <a class="dropdown-item" href="#transit-tracke">Transit Tracker</a>
+          <a class="dropdown-item" href="#todo">Task Management Application</a>
+        </div>
+      </li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+    </ul>
+      <ul class="list-unstyled CTAs">
+                <li>
+                    <center>
+                    <span><img src="assets/brands/linkedin.svg" onclick="window.open('https://www.linkedin.com/in/rayyan-shaji/')" class="brand-images"></span> 
+                    <span><img class="brand-images" src= "assets/brands/github.svg" onclick="window.open('https://github.com/rayyanshaji')" ></span>
+                        <span><img src="assets/brands/envelope.svg" onClick="javascript:window.open('mailto:rayyanz95@gmail.com', 'Mail');event.preventDefault()" class="brand-images"></span>
+                    </center>
+                </li>
+                <li>
+                    <a href="./assets/resume/MohammedRayyanShaji.pdf" class="download">Download/View resume</a>
+                </li>
+                <li><center>
+                <a href="mailto:rayyanz95@gmail.com"><strong>rayyanz95@gmail.com</strong></a>
+
+                    <a href="tel:773-441-0455"><strong>773-441-0455</strong></a></center></li>
+            </ul>
+  </div>
+</nav>
+            <div class="container float-left" id="home">
+            <h2>Welcome</h2>
+            <strong>Brief background</strong>
+                
+            <p style="font-size:16px;">I am a full stack software engineer who takes pride in architecting and building software with mutlivariate programming language realms </p>
+            <hr>
+
+           
+                
+            <h3>Purpose and contents</h3> 
             <strong>Projects:</strong>
             <ul>
                 <li>
@@ -120,12 +245,13 @@
                 Some notable features outlined which make the crux of the application. 
                 </li>
                 <li>
-                Brief explanation of how and where programming languages,frameworks,libraries have been used in building these projects.
+                Brief explanation of how and where programming languages, frameworks, libraries have been used in building these projects.
                 </li>
                 <li>
                 Demo Videos, Screenshots showing basic user interactivity or use case of the application.
                 </li>
                 </ul>
+                
             <strong>Skills:</strong>
             <ul>
                 <li>
@@ -144,22 +270,22 @@
                 Screenshots of work samples I had individually worked on. <i>(which are still maintained to this day)</i>
                 </li>
                 </ul>    
-           
+           <hr>
                 </div>
             
-                
-                 <div id="projects">
-            <h4>Featured Projects</h4>
+            
+            
+                <div class="container float-left" id="projects">
+                 
+            <h3>Featured Projects</h3>
                     <div id="nutrional-value">
-            <h5><strong>Nutrional Value Calculator</strong></h5><span class="text-muted">On going project</span>
+            <h5><strong>Nutrional Value Calculator</strong></h5>
                         <p><a id="link" href="https://comp424-nutrional-value.herokuapp.com/" target="_blank"><strong>Demo Link</strong></a>
                         <span class="vl"></span>
                         <span><a href="https://github.com/rayyanshaji/comp424-nutrional-value" target="_blank" id="link"><strong>Code</strong></a></span>
                         </p>
-                        
-                        <i>Some features in the demo link might not work since this is a work in progress.</i>
-                        
-                        <h5>Quick demo</h5>
+                                    
+                        <p><img src="assets/video-camera.svg" style="width:2%;"> <span class="font-weight-bold">Demo Video</span></p>
                         
                         <div class="jump-nutrition">
                                         
@@ -175,17 +301,22 @@
                         <a id="jump-nutrition3" href="">0:12</a> <span>Add food to a different meal</span>
                         
                         </div>
+                       
                         
-                        <video width="800" poster="./assets/nutrional/demo-video-nutrional.gif" controls id="video-nutrional">
+                        <video width="800" class="embed-border" poster="./assets/nutrional/demo-video-nutrional.gif" controls id="video-nutrional">
                         <source src="assets/nutrional/sample-video.mp4">
                         </video>
+                       
+                      
+                            
+                    
                     
                          <div id="about-project">
                          <p><b>An easy to use nutrional value calculator, to track your daily caloric intake substituted with nutrtional information about each food.</b>
                              We've researched existing nutritional food information websites and applications and found that the user needed to perform a couple of distractive steps in order to log foods into a meal time.  </p>
-                             <p>We designed our application in a way which amounts to take the least steps possible for the user to reach his goal.
+                             <p>We designed our application in a way which amounts to take the least steps possible for the user to reach his goal. </p>
                         
-                                 <h5>Notable Features</h5> <i>(achieved so far)</i>
+                                 <h5>Notable Features</h5> 
                             <ul>
                              <li>
                             <b>Auto-complete search</b> feature for both common and branded foods to ensure a seamless user experience.
@@ -197,7 +328,7 @@
                             <b>Total Calories calculated</b> for both per-meal and calories throughout the day.
                             </li>
                              </ul>
-                             <i>This project is done as part of a graduate course I had taken named Client Side Programming</i> 
+                          
                             
                         </div> 
                          <h5>Utilization of languages, technologies, frameworks, libraries and databases</h5>
@@ -223,7 +354,7 @@
                          
                          <img src="./assets/languages/nodejs.svg" class="programming-images"><strong>NodeJS</strong>
                          <ul>
-                        <li><p>Currently working with NodeJS to add user goals, for tracking caloric intake over a week or a month.</p>
+                        <li><p>Developed Node.js script for allowing user to store weight in Mongo DB database.</p>
                          </li>
                              
                          </ul>
@@ -243,11 +374,19 @@
                          </ul>
                      </div>
                      
+                     <hr>
+                     
                      <div id="blueditt">
                      <h5><strong>BlueDitt</strong></h5>
-                         <i>(Work in progress)</i>
+						
+                        
+						 
+						 <p><a id="link" href="http://18.224.184.98/" target="_blank"><strong>Demo Link</strong></a>
+                        <span class="vl"></span>
                          <span><a href="https://github.com/rayyanshaji/algorithm_js" id="link" target="_blank"><strong>Code</strong></a></span>
-                         <h5>Quick demo video</h5>
+                        </p>
+						
+                        <p><img src="assets/video-camera.svg" style="width:2%;"> <span class="font-weight-bold">Demo Video</span></p>
                         
                         <div class="jump-blueditt">
                             
@@ -266,7 +405,7 @@
                         <a id="jump-blueditt4" href="">0:25</a> <span>Adding a post</span>
                         
                         </div>
-                         <video width="800" poster="./assets/blueditt/blueditt.gif" id="video-blueditt" controls>
+                         <video width="800" poster="./assets/blueditt/blueditt.gif" class="embed-border" id="video-blueditt" controls>
                             <source src="assets/blueditt/Blueditt.mp4">
                         </video>
                     
@@ -335,6 +474,7 @@
                          
                      </div>
                      
+                     <hr>
                    
                      
                      
@@ -354,21 +494,21 @@
                       </ol>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="./assets/issue-tracker/issue-tracker-home.JPG" alt="Home Page">
+                          <img class="d-block img-fluid" src="./assets/issue-tracker/issue-tracker-home.JPG" alt="Home Page">
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Home Page</h5>
                             <p>Shows all the cases posted by the team!</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/issue-tracker/Individual-case-page.JPG" alt="Open A Case">
+                          <img class="d-block img-fluid" src="./assets/issue-tracker/Individual-case-page.JPG" alt="Open A Case">
                              <div class="carousel-caption d-none d-md-block">
                             <h5>Case Page</h5>
                             <p>Individual Case details with comments</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/issue-tracker/create-case.JPG" alt="Create A Case">
+                          <img class="d-block img-fluid" src="./assets/issue-tracker/create-case.JPG" alt="Create A Case">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <h5>Create A Case Page</h5>
                             <p>Fill the form with some details of the issue you're facing</p>
@@ -409,7 +549,7 @@
                                  </li>
                              </ul>
                                  
-                                 <i>This project was done as part of a graduate course I had taken named Database Programming</i> </p>
+                                 <i>This project was done as part of a graduate course I had taken named Database Programming</i> 
                             
                         </div> 
                          <h5>Utilization of languages, technologies, frameworks, libraries and databases</h5>
@@ -450,9 +590,9 @@
                          </ul>
                      </div>
                              
-                     
+                     <hr>
                 <div id="transit-tracker">
-            <h5><strong>Transit Tracking Application</strong></h5>
+                <h5><strong>Transit Tracking Application</strong></h5>
                     <p>
                     <span> <a id="link" href="https://bustracker2020febplan.azurewebsites.net/"><strong>Demo Link</strong></a></span> 
                     <span class="vl"></span>
@@ -460,7 +600,7 @@
                     </p>
                     <p>
                     <a id="link" href="https://docs.google.com/document/d/1zuAMbfy1YZY40tow6Mk3qNjlL1duRuAeLiHxhWtX6X8/edit"> <strong>Design and Functional Specification Document</strong></a> </p>
-                     <b>Screenshots:</b>
+                    <p><strong>Screenshots</strong></p>
                      <div id="carouselExampleIndicators1" class="carousel slide carousel-fade" data-ride="carousel" style="width: 75%; height: 75%;">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -469,21 +609,21 @@
                       </ol>
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="./assets/transit-tracker/autocomplete.JPG" alt="Home Page">
+                          <img class="d-block img-fluid" src="./assets/transit-tracker/autocomplete.JPG" alt="Home Page">
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Autocomplete Search</h5>
                             <p>A list which fills out relevant locations to each letter entered</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/transit-tracker/bustracker-results.JPG" alt="Open A Case">
+                          <img class="d-block img-fluid" src="./assets/transit-tracker/bustracker-results.JPG" alt="Open A Case">
                              <div class="carousel-caption d-none d-md-block">
                             <h5>Getting result of our search</h5>
                             <p></p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/transit-tracker/directions.JPG">
+                          <img class="d-block img-fluid" src="./assets/transit-tracker/directions.JPG">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <h5>Transit Directions</h5>
                             <p>A quick guide for directions for both visitors or city dwellers.</p>
@@ -491,14 +631,14 @@
                         </div>
                           
                           <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/transit-tracker/locations.png" alt="Create A Case">
+                          <img class="d-block img-fluid" src="./assets/transit-tracker/locations.png" alt="Create A Case">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <h5>Save Locations</h5>
                             </div>
                         </div>
                           
                           <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/transit-tracker/delete.png" alt="Create A Case">
+                          <img class="d-block img-fluid" src="./assets/transit-tracker/delete.png" alt="Create A Case">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <h5>Update Locations</h5>
                             </div>
@@ -551,6 +691,8 @@
                          </ul>   
                 </div>  
                      
+                     <hr>
+                     
                  <div id="todo">
                 <h5><strong>Task Management Application</strong></h5>
                      <p>
@@ -559,7 +701,7 @@
                     <span><a href="https://github.com/rayyanshaji/FullStack_TodoList_CRUDApp" id="link" rel="noopener noreferrer" target="_blank"><strong>Code</strong></a></span>
                     </p>
                      <b>Screenshots:</b>
-                     <div id="carouselExampleIndicators2" class="carousel slide carousel-fade" data-ride="carousel" style="width: 75%; height: 75%;">
+                     <div id="carouselExampleIndicators2" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -567,20 +709,20 @@
                       </ol>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="./assets/todo/todo-page.JPG" alt="Home Page">
+                          <img class="d-block img-fluid" src="./assets/todo/todo-page.JPG" alt="Home Page">
                             <div class="carousel-caption d-none d-md-block">
                             <h5>List of Tasks</h5>
                             <p>Change status of an impending task</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/todo/chose-date.JPG" alt="Open A Case">
+                          <img class="d-block img-fluid" src="./assets/todo/chose-date.JPG" alt="Open A Case">
                              <div class="carousel-caption d-none d-md-block">
                             <p>Create or Update a task with it's details and chose a date</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/todo/create.JPG" alt="Create A Case">
+                          <img class="d-block img-fluid" src="./assets/todo/create.JPG" alt="Create A Case">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <p>Save the task</p>
                             </div>
@@ -631,25 +773,29 @@
                              <li><p>Java packaged application deployed on Azure for secure tranmission of data over HTTPS.</p></li>
                          </ul>
                 </div>  
-                </div>
-                     
-               
-                
-                
             
+                  <hr>    
+            </div>
+                
                
-                <div id="experience"><h4><strong>Professional Work Experience</strong></h4>
+            
+               <div class="container float-left" id="experience">
+                <h4><strong>Professional Work Experience</strong></h4>
                 <img src="assets/brands/paxten.png" class="programming-images">
-                <strong>Web Developer Intern,</strong>
+                <strong>Web Developer</strong>
                 <span>Paxten Technologies</span>
                 <p>Aug 2018 - Oct 2018</p>
     
                     <ul>
                         <li>
-                <p>Worked on a couple of projects out of one where I redesigned the company’s website, improving the sites overall aesthetics, graphics, images and data organisation.</p><a id="link" href="https://www.paxten.co/">https://www.paxten.co/</a>
+                <p>Worked on a couple of projects out of one where I redesigned the company’s website, improving the sites overall aesthetics, graphics, images and data organisation.</p>
+                        <p><a id="link" href="https://www.paxten.co/">https://www.paxten.co/</a></p>
                         </li>
                         <li>
-                <p>I had also worked on an individually led project for a client where I gave their website an entire revamp in terms of information architecture, organization of media, and ensuring consistency of placing UI elements in logical positions</p><a id="link" href="https://www.rukseng.ca/">https://www.rukseng.ca/</a>
+                <p>I had also worked on an individually led project for a client where I gave their website an entire revamp in terms of information architecture, organization of media, and ensuring consistency of placing UI elements in logical positions</p>
+                            <p>
+                            <a id="link" href="https://www.rukseng.ca/">https://www.rukseng.ca/</a>
+                            </p>
                         </li>
                         <li>
                             <p>
@@ -658,7 +804,7 @@
                     
                     <strong>Selected Work samples:</strong>
                     <b>Company Landing Page</b>
-                     <div id="carouselExampleIndicators3" class="carousel slide carousel-fade" data-ride="carousel" style="width: 70%; height: 75%;">
+                     <div id="carouselExampleIndicators3" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -666,34 +812,34 @@
                       </ol>
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="./assets/paxten/paxten-1.JPG" alt="Home Page">
+                          <img class="d-block img-fluid" src="./assets/paxten/paxten-1.JPG" alt="Home Page">
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Home Page</h5>
                          
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/paxten/paxten-services-tech.JPG" alt="Open A Case">
+                          <img class="d-block img-fluid" src="./assets/paxten/paxten-services-tech.JPG" alt="Open A Case">
                              <div class="carousel-caption d-none d-md-block">
                             <p>Colored background text for engaging readability.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/paxten/paxten-products.JPG">
+                          <img class="d-block img-fluid" src="./assets/paxten/paxten-products.JPG">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <p>Layout for product page.</p>
                             </div>
                         </div>
                           
                           <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/paxten/paxten-icons.JPG" alt="Create A Case">
+                          <img class="d-block img-fluid" src="./assets/paxten/paxten-icons.JPG" alt="Create A Case">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <h5>Save Locations</h5>
                             </div>
                         </div>
                           
                           <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/paxten/paxten-icons-2.JPG" alt="Create A Case">
+                          <img class="d-block img-fluid" src="./assets/paxten/paxten-icons-2.JPG" alt="Create A Case">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <h5>Colored icons for attracting site visitors</h5>
                             </div>
@@ -719,27 +865,27 @@
                       </ol>
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="./assets/paxten/ruks-1.JPG" alt="Home Page">
+                          <img class="d-block img-fluid" src="./assets/paxten/ruks-1.JPG" alt="Home Page">
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Home Page</h5>
                          
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/paxten/ruks-2.JPG" alt="Open A Case">
+                          <img class="d-block img-fluid" src="./assets/paxten/ruks-2.JPG" alt="Open A Case">
                              <div class="carousel-caption d-none d-md-block">
-                            <p>Products on home page.</p>
+                            <h5>Products on home page.</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/paxten/ruks-product-page.JPG">
+                          <img class="d-block img-fluid" src="./assets/paxten/ruks-product-page.JPG">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
-                            <p>Individual product page</p>
+                            <h5>Individual product page</h5>
                             </div>
                         </div>
                           
                           <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/paxten/brochure.JPG" alt="Create A Case">
+                          <img class="d-block img-fluid" src="./assets/paxten/brochure.JPG" alt="Create A Case">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <p>Brochure page</p>
                             </div>
@@ -772,7 +918,7 @@
                 
                     <p>Work samples</p>
 
-                     <div id="carousel-computing-specialist" class="carousel slide carousel-fade" data-ride="carousel" style="width: 60%; height: 85%;">
+                     <div id="carousel-computing-specialist" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-computing-specialist" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-computing-specialist" data-slide-to="1"></li>
@@ -780,21 +926,21 @@
                       </ol>
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="./assets/loyola/LLRC.JPG" alt="Home Page">
+                          <img class="d-block img-fluid" src="./assets/loyola/LLRC.JPG" alt="Home Page">
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Image gallery layout</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/loyola/llrc2.JPG" alt="Open A Case">
+                          <img class="d-block img-fluid" src="./assets/loyola/llrc2.JPG" alt="Open A Case">
                              <div class="carousel-caption d-none d-md-block">
-                            <p>Video gallery</p>
+                            <h5>Video gallery</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/loyola/llrc3.JPG" alt="Loading..">
+                          <img class="d-block img-fluid" src="./assets/loyola/llrc3.JPG" alt="Loading..">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
-                            <p>Embedding panopto with the website</p>
+                            <h5>Embedding panopto for showing video stream</h5>
                             </div>
                         </div>
                     
@@ -834,19 +980,19 @@ updated design aimed towards better readability and making it clearer finding in
                       </ol>
                       <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="./assets/loyola/SOE.JPG" alt="Home Page">
+                          <img class="d-block img-fluid" src="./assets/loyola/SOE.JPG" alt="Home Page">
                             <div class="carousel-caption d-none d-md-block">
                             <h5>Closed drop downs on course page.</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/loyola/SOE-drop.JPG" alt="Open A Case">
+                          <img class="d-block img-fluid" src="./assets/loyola/SOE-drop.JPG" alt="Open A Case">
                              <div class="carousel-caption d-none d-md-block">
                             <h5>More information on uncollapsed drop down.</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/loyola/SOE-3.JPG">
+                          <img class="d-block img-fluid" src="./assets/loyola/SOE-3.JPG">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             <h5>Student can click on any drop down for finding more information</h5>
                             </div>
@@ -873,6 +1019,7 @@ updated design aimed towards better readability and making it clearer finding in
                 <p>Created a single page website using Bootstrap, HTML, CSS and Javascript. Website also runs on PHP for server side operations such as sending data to a database storing student information when they register for events.</p>
         
                 <b>Screenshots</b>
+                    
                      <div id="carouselMJCET" class="carousel slide carousel-fade" data-ride="carousel" style="width: 80%; max-height: 10%;">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -882,31 +1029,31 @@ updated design aimed towards better readability and making it clearer finding in
                       <div class="carousel-inner" role="listbox">
                     
                         <div class="carousel-item active">
-                          <img class="d-block w-100" src="./assets/mjcet/Home.JPG" alt="Open A Case">
+                          <img class="d-block img-fluid" src="./assets/mjcet/Home.JPG" alt="Open A Case">
                              <div class="carousel-caption d-none d-md-block">
                     
-                            <p>Transparent image of the team!</p>
+                            <h5>Transparent image of the team!</h5>
                             </div>
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/mjcet/events.JPG">
+                          <img class="d-block img-fluid" src="./assets/mjcet/events.JPG">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
                             
-                            <p>Events panel</p>
+                            <h5>Events panel</h5>
                             </div>
                         </div>
                           
                           <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/mjcet/members.JPG" alt="Create A Case">
+                          <img class="d-block img-fluid" src="./assets/mjcet/members.JPG" alt="Create A Case">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
-                            <h5>Save Locations</h5>
+                            <h5>ACM Team members</h5>
                             </div>
                         </div>
                           
                           <div class="carousel-item">
-                          <img class="d-block w-100" src="./assets/mjcet/register.JPG" alt="Create A Case">
+                          <img class="d-block img-fluid" src="./assets/mjcet/register.JPG" alt="Create A Case">
                              <div class="carousel-caption d-none d-md-block" id="imagecaptioncarousel">
-                            <h5>Update Locations</h5>
+                            <h5>Registration modal</h5>
                             </div>
                         </div>
                           
@@ -920,18 +1067,17 @@ updated design aimed towards better readability and making it clearer finding in
                         <span class="sr-only">Next</span>
                       </a>
                     </div>
+                   <hr>
                 </div>
                 
-                
-                <div id="skills"><h4><strong>Skills</strong></h4>
+            <div class="container float-left">
+                <div id="skills">
+                    <h4><strong>Skills</strong></h4>
                 <h5><strong>Object-oriented programming languages</strong></h5>
                 <img src="assets/languages/Java_logo.png" class="programming-images"><strong>Java</strong>
                 
-                    <li>
-                    Preference for coding interview problems,competitive programming, practicing data structures and algorithms.
-                    </li>
+                    <p> <i>Understanding of frameworks, and libraries within Java's ecosystem:</i> </p>
                     
-                    <i>Understanding of frameworks, and libraries within Java's ecosystem:</i>
                     <ul>   
                     <li>
                         <img src="./assets/languages/Spring_Framework_Logo_2018.svg.png" class="programming-images"><strong>Spring Framework's</strong>
@@ -1087,10 +1233,10 @@ updated design aimed towards better readability and making it clearer finding in
                         
                     </li>
                     </ul>
-                    </div>
-               
+               <hr>
+            </div>
             
-            <div id="education">
+            <div class="container float left" id="education">
             <h4>Education</h4>
                 <img src="assets/brands/LUC_vertical.png" class="programming-images">
                 <strong>Loyola University Chicago,</strong>
@@ -1121,8 +1267,7 @@ updated design aimed towards better readability and making it clearer finding in
                 <img src="assets/brands/osmania.jpg" class="programming-images">
                 <strong>Osmania University, Hyderabad</strong>
                 <span>Bachelors in Information Technology</span>
-                <p>Sep 14' -  June 18'</p>
-                
+                <p>Sep 14' - June 18'</p>   
                 </div>
             </div>
             
@@ -1134,14 +1279,9 @@ updated design aimed towards better readability and making it clearer finding in
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
 <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
-        <script
-  src="https://code.jquery.com/jquery-3.4.1.min.js"
-  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script>
-    <!-- Popper.JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <script type="text/javascript" src="assets/js/homepage.js">
         //$('#sidebar').scrollspy();

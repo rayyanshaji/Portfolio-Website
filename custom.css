@@ -1,0 +1,15 @@
+.dropdown-menu{
+ background-color:#55ACEE;
+/*border: 0.3px solid white;*/
+
+}
+
+.dropdown-item{
+    color : white;
+/*    padding:8px;*/
+/*    border-bottom: 0.3px solid white;*/
+}
+
+.list-unstyled strong {
+    color: white;
+}

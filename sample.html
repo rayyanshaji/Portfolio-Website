@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+    #customnav{
+            display:none;
+        }
+    
+    
+    @media screen and (max-width: 768px){
+        #customnav{
+            display:flex;
+        }
+        
+        
+    }
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+<body>
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #55ACEE;" id="customnav">
+  <a class="navbar-brand " href="#">Mohammed Rayyan Shaji</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>   
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div class="dropdown-menu navbar-expand-lg navbar-dark " aria-labelledby="navbarDropdownMenuLink" id="customdropdownmenu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="main"> 
+  <h2>Collapsed Sidebar</h2>
+  <p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p><p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p><p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p><p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p><p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p><p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p><p>Click on the hamburger menu/bar icon to open the sidebar, and push this content to the right.</p>
+      <p style="font-size:15px;">I've been involved with studying and applying knowledge of software engineering, computer science, and web application development since about 6 years. I enjoy working on projects which help me improve on skills that matter. I'm currently enrolled in a masters degree program with a major in Information Technology</p>
+    <div>
+                
+            <h5>Purpose and contents:</h5> 
+            <strong>Projects:</strong>
+            <ul>
+                <li>
+                Showcase some selected projects, what problem they solve, and why had I chosen to work with them.
+                </li>
+                <li>
+                Some notable features outlined which make the crux of the application. 
+                </li>
+                <li>
+                Brief explanation of how and where programming languages,frameworks,libraries have been used in building these projects.
+                </li>
+                <li>
+                Demo Videos, Screenshots showing basic user interactivity or use case of the application.
+                </li>
+                </ul>
+            <strong>Skills:</strong>
+            <ul>
+                <li>
+                Brief explanation of certain areas I have used the skill.
+                </li>
+                <li>
+                Knowledge of frameworks, libraries, toolkits within the ecosystem of a skill.
+                </li>
+                </ul>
+             <strong>Work Experience:</strong>
+                <ul>
+                <li>
+                Some selected achievements of my work experience, and approaches taken towards them,
+                </li>
+                <li>
+                Screenshots of work samples I had individually worked on. <i>(which are still maintained to this day)</i>
+                </li>
+                </ul>    
+           
+                </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+   
+</body>
+</html> 
